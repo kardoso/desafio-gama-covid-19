@@ -12,7 +12,7 @@ a {
 }
 
 header {
-  height: 64px;
+  min-height: 64px;
   width: 100%;
   background-color: rgb(46, 189, 177);
   display: flex;
@@ -61,5 +61,23 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  nav > * {
+    margin-top: 16px;
+  }
+
+  nav ul {
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 16px;
   }
 }
