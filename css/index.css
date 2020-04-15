@@ -1,3 +1,19 @@
+content {
+  top: 64px;
+}
+
+@media screen and (max-width: 1080px) {
+  content {
+    top: 114px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  content {
+    top: 0px;
+  }
+}
+
 content>* {
   height: 100vh;
   display: flex;

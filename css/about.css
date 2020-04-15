@@ -6,12 +6,12 @@ content {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/dd/Code_presentation_background.png");
+  top: 64px;
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1080px;
   align-self: center;
   display: flex;
@@ -20,6 +20,7 @@ content {
   background-color: rgba(240, 240, 240, 0.418);
   padding: 25px;
   border-radius: 16px;
+  top: 0px;
 }
 
 .container img {
@@ -75,9 +76,29 @@ content {
   background-color: rgb(56, 146, 139);
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width: 1080px) {
+  content {
+    top: 114px;
+    padding: 128px;
+    min-height: 100vh;
+    height: 100%;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .about-description {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  content {
+    top: 0px;
+    height: 100%;
+    padding: 16px 0px;
   }
 }

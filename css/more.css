@@ -7,8 +7,22 @@ content {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   background-image: url("https://www.unifor.br/documents/20143/568430/coronavirus_site_especial_unifor.jpg/2653cea4-bd1c-6f1c-e032-ba60224fa246?t=1584042858541");
+  top: 64px;
+}
+
+@media screen and (max-width: 1080px) {
+  content {
+    top: 114px;
+    height: 100vh
+  }
+}
+
+@media screen and (max-width: 480px) {
+  content {
+    top: 0px;
+    height: 100%;
+  }
 }
 
 content nav {
