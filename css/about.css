@@ -1,0 +1,83 @@
+content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/dd/Code_presentation_background.png");
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.418);
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about-img {
+  min-width: 128px;
+  width: 30%;
+}
+
+.about-description {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex;
+}
+
+.about-description>* {
+  text-align: center;
+  margin: 8px;
+  color: #fff;
+}
+
+.about-description h1 {
+  font-size: 3em;
+}
+
+.about-description p {
+  line-height: 2em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(46, 189, 177);
+  width: 120px;
+  padding: 16px 32px;
+  margin: 8px 0px;
+  border-radius: 8px;
+}
+
+.links a:hover {
+  background-color: rgb(56, 146, 139);
+}
+
+@media screen and (max-width:720px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
